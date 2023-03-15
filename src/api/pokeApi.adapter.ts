@@ -26,7 +26,6 @@ export class PokeApiAdapter implements HttpAdapter {
 
     async get<T>( url: string ): Promise<T> {
         const { data } = await this.axios.get<T>(url);
-        console.log('con axios');
         return data;
     }
 
